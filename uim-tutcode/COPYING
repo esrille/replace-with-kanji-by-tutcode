@@ -1,0 +1,236 @@
+------------------------------------------------------------------------------
+  Copyright (c) 2003-2013 uim Project https://github.com/uim/uim
+
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. Neither the name of authors nor the names of its contributors
+     may be used to endorse or promote products derived from this software
+     without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS
+  IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+------------------------------------------------------------------------------
+
+Supplementary explanation (only for help and not legal):
+
+  You may use, reuse, modify, distribute and/or sell material contained
+  in this package, except for those files or directories that contain a
+  notice that a different license applies.  Such exceptional material
+  must be distributed under the terms of the license specified therein.
+  Each file indicates its copyright holder in its header.
+
+  * scm/py.scm is come from m17n-lib, you can use, modify, distribute
+    and sell this under the terms of LGPL *only*.
+
+  * scm/pinyin-big5.scm is come from XCIN, you can use, modify, distribute
+    and sell this under the terms of GPL *only*.
+
+  * scm/elatin-rules.scm is derived from GNU Emacs, you can use,
+    modify, distribute and sell this under the terms of GPL *only*.
+
+  * scm/input-parse.scm is public domain. 'Unless specified otherwise,
+    all the code and the documentation on this site is in public domain.'
+    http://okmij.org/ftp/
+
+  * scm/match.scm is public domain. 'Feel free to copy, distribute, and
+    modify this software as desired.  No warranties nor guarantees of
+    any kind apply.'
+
+  * helper/eggtrayicon.[ch] are come from libegg, so you can use,
+    modify, distribute and sell uim-toolbar-gtk-systray under the
+    terms of LGPL *only*.
+
+  * qt/pref-kseparator.{cpp,h} come from kdeui, so you can use,
+    modify, distribute and sell uim-pref-qt under the terms of LGPL
+    *only*.
+
+  * qt/chardict/chardict-kseparator.{cpp,h} are come from kdeui, so
+    you can use, modify, distribute and sell uim-chardict-qt under
+    the terms of LGPL *only*.
+
+  * pixmaps/*.{svg,png} are also licensed under the 3-clause BSD
+    license, but has different copyright holders. See
+    pixmaps/{COPYING.BSDL,README,AUTHORS} for further information.
+
+
+sigscheme/ is covered by:
+------------------------------------------------------------------------------
+  Copyright (C) 2005,2006 Kazuki Ohta <mover AT hct.zaq.ne.jp>
+                2005,2006 Jun Inoue <jun.lambda AT gmail.com>
+                2005,2006 YAMAMOTO Kengo <yamaken AT bp.iij4u.or.jp>
+                2007-2008 SigScheme Project <uim-en AT googlegroups.com>
+
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  1. Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+  3. Neither the name of authors nor the names of its contributors
+     may be used to endorse or promote products derived from this software
+     without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS
+  IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+------------------------------------------------------------------------------
+
+
+sigscheme/libgcroots/ is covered by:
+-----------------------------------------------------------------------------
+Copyright 1988, 1989 Hans-J. Boehm, Alan J. Demers
+Copyright (c) 1991-1995 by Xerox Corporation.  All rights reserved.
+Copyright (c) 1996-1999 by Silicon Graphics.  All rights reserved.
+Copyright (c) 1999-2001 by Hewlett-Packard. All rights reserved.
+Copyright (c) 2006-2007 YAMAMOTO Kengo All rights reserved.
+
+THIS MATERIAL IS PROVIDED AS IS, WITH ABSOLUTELY NO WARRANTY EXPRESSED
+OR IMPLIED.  ANY USE IS AT YOUR OWN RISK.
+
+Permission is hereby granted to use or copy this program
+for any purpose,  provided the above notices are retained on all copies.
+Permission to modify the code and to distribute modified code is granted,
+provided the above notices are retained, and a notice that the code was
+modified is included with the above copyright notice.
+-----------------------------------------------------------------------------
+
+
+uim/wnnlib.h and uim/wnnlib.c is covered by:
+-----------------------------------------------------------------------------
+Copyright (c) 1989  Software Research Associates, Inc.
+Copyright (c) 1998  MORIBE, Hideyuki
+
+Permission to use, copy, modify, and distribute this software and its
+documentation for any purpose and without fee is hereby granted, provided
+that the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation, and that the name of Software Research Associates not be
+used in advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.  Software Research
+Associates makes no representations about the suitability of this software
+for any purpose.  It is provided "as is" without express or implied
+warranty.
+
+Author:  Makoto Ishisone, Software Research Associates, Inc., Japan
+         ishisone@sra.co.jp
+         MORIBE, Hideyuki
+-----------------------------------------------------------------------------
+
+
+uim/uim-error.c(uim_asprintf) is covered by:
+-----------------------------------------------------------------------------
+Author: Tatu Ylonen <ylo@cs.hut.fi>
+Copyright (c) 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland
+                   All rights reserved
+Versions of malloc and friends that check their results, and never return
+failure (they call fatal if they encounter an error).
+
+As far as I am concerned, the code I have written for this software
+can be used freely for any purpose.  Any derived versions of this
+software must be clearly marked as such, and if the derived work is
+incompatible with the protocol description in the RFC file, it must be
+called by a name other than "ssh" or "Secure Shell".
+-----------------------------------------------------------------------------
+
+scm/util.scm
+(call-with-output-string, call-with-input-string, call-with-string-io)
+is covered by:
+-----------------------------------------------------------------------------
+  Copyright (c) 2000-2008  Shiro Kawai  <shiro@acm.org>
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+ 3. Neither the name of the authors nor the names of its contributors
+    may be used to endorse or promote products derived from this
+    software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-----------------------------------------------------------------------------
+
+scm/pregexp.scm is covered by:
+-----------------------------------------------------------------------------
+Copyright (c) 1999-2005, Dorai Sitaram.
+All rights reserved.
+
+Permission to copy, modify, distribute, and use this work or
+a modified copy of this work, for any purpose, is hereby
+granted, provided that the copy includes this copyright
+notice, and in the case of a modified copy, also includes a
+notice of modification.  This work is provided as is, with
+no warranty of any kind.
+
+scm/packrat.scm, scm/json.scm is covered by:
+-----------------------------------------------------------------------------
+Copyright (c) 2004, 2005 Tony Garnock-Jones <tonyg@kcbbs.gen.nz>
+Copyright (c) 2005 LShift Ltd. <query@lshift.net>
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+

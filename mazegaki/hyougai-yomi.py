@@ -1,0 +1,104 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at:
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# 常用漢字表外のよみかたの熟語をリストアップします。
+
+import itertools
+import re
+import sys
+
+re_on = re.compile(r"[^ぁ-んァ-ヶー\-]")
+
+def to_hirakana(s):
+    katakana = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンガギグゲゴザジズゼゾダヂヅデドバビブベボァィゥェォャュョッパピプペポ"
+    hirakana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぁぃぅぇぉゃゅょっぱぴぷぺぽ"
+    t = ''
+    for c in s:
+        i = katakana.find(c)
+        if i == -1:
+            t += c
+        else:
+            t += hirakana[i]
+    return t;
+
+def to_seion(s):
+    dakuon = "がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽっ"
+    seion = "かきくけこさしすせそたちつてとはひふへほはひふへほつ"
+    t = ''
+    for c in s:
+        i = dakuon.find(c)
+        if i == -1:
+            t += c
+        else:
+            t += seion[i]
+    return t;
+
+dict = {}
+
+def gokan(kana):
+    pos = kana.find('-')
+    if pos == -1:
+        return to_hirakana(kana)
+    return to_hirakana(kana[0:pos])
+
+def regular_use(kana, cand):
+    global dict
+    if len(cand) == 1:
+        if not cand in dict:
+            return 0
+        return kana in dict[cand]
+    c = cand[0];
+    if not c in dict:
+        return 0;
+    s = dict[c];
+    for c in cand[1:]:
+        if not c in dict:
+            return 0;
+        t = set(itertools.product(s, dict[c]))
+        s = set()
+        for y in t:
+            s.add(to_seion(''.join(y)))
+            if 2 <= len(y[0]) and 0 <= "きくキク".find(y[0][-1]) and 0 <= "かきくけこカキクケコ".find(y[1][0]):
+                s.add(to_seion(y[0][0:-1] + "つ" + y[1]))
+    if to_seion(kana) in s:
+        return 1
+    return 0
+
+#
+# main
+#
+if __name__ == "__main__":
+    regular = open("zyouyou-kanji.csv", 'r')
+    for line in regular:
+        l = line.strip(" \n/").split(",")
+        kanji = l[0]
+        l.remove(kanji)
+        s = set()
+        for cand in l[:]:
+            cand = cand.strip("（）")
+            if re_on.search(cand):
+                continue
+            s.add(gokan(cand))
+        if s:
+            dict[kanji] = s
+    for line in sys.stdin:
+        if line[0] == ';':
+            continue;
+        l = line.strip(" \n/").split(" ", 1)
+        kana = l[0]
+        kanji = l[1].strip(" \n/").split("/")
+        for cand in kanji[:]:
+            if not regular_use(kana, cand):
+                print(kana, " /", cand, "/", sep='')

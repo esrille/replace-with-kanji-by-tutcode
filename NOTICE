@@ -1,0 +1,40 @@
+Replace with Kanji by TUT-code
+Copyright 2017 Esrille Inc.
+
+This product includes software developed at
+Esrille Inc. (http://www.esrille.com/).
+
+== Credits ==
+
+mazegaki.dic generated in tc2 is used to create restrained.dic.
+tc2 is released under GNU General Public License v2.0. The original
+software is available from,
+    https://github.com/kanchoku/tc
+
+tsf-romaji.txt is to be used with tsf-tutcode, which is released under
+Microsoft Public License (MS-PL) and other licenses. The original 
+software is available from,
+    https://github.com/deton/tsf-tutcode
+
+romaji-rule.scm is to be used with uim-tutcode, which is released under
+the 3-Clause BSD License. The original software is available from,
+    https://github.com/uim/uim
+
+== The Esrille logo ==
+
+The Esrille logo is a trademark of Esrille Inc. All rights reserved.
+
+The Esrille logo is a special trademark to identify the products developed and
+distributed by Esrille Inc.
+
+The Esrille logo can be used by anyone if that use of the logo is nominative.
+The "nominative use" authorizes everyone (even commercial companies) to use
+the trademark of another if:
+
+  1. The product or service cannot be readily identified without use of
+     the trademark;
+  2. The user only uses as much of the mark as is necessary to identify
+     the product or service; and,
+  3. The user does nothing to suggest sponsorship or endorsement by the
+     trademark holder.
+
