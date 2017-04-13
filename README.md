@@ -57,7 +57,7 @@
 
 辞書にカスタマイズをくわえたいときは、my.mdicを変更してから、restrain.shを実行すると、あたらしいrestrained.dicが生成されます。辞書の和をとったり、差をとったり、といった操作には[skkdic-expr2](https://github.com/skk-dev/skktools)をつかっています。
 
-## つかい方
+## つかいかた
 
 ### uim-tutcodeの場合
 
